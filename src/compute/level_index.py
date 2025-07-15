@@ -64,7 +64,8 @@ class LevelIndex:
         else:
             raise ValueError(f"Unsupported return type: {self.return_type}")
 
-        # Apply volatility targeting if enabled
+        # Apply volatility targeting if enable
+        # d
         if self.params.get("use_vol_target", False):
             total_return = self._apply_volatility_targeting(total_return)
 
